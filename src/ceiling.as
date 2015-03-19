@@ -1,21 +1,21 @@
 package  
 {
-	
+	/**
+	 * ...
+	 * @author Nathan Nieuwenhuizen
+	 */
 	import flash.display.Bitmap;
 	import flash.display.Sprite;
 	import flash.events.Event;
-	/**
-	 * ...
-	 * @author niels
-	 */
-	public class Background extends Sprite 
+	public class ceiling extends Sprite
 	{
-		[Embed(source="../img/back2.png")]
+		
+		[Embed(source="../img/ceiling2.png")]
 		private var BackgroundImage:Class;
-		private var speed:Number = -8;
+		private var speed:Number = -7;
 		private var bgImage:Bitmap;
 		
-		public function Background() 
+		public function ceiling() 
 		{
 			
 			this.addEventListener(Event.ADDED_TO_STAGE, init);
@@ -31,12 +31,12 @@ package
 		private function loop(e:Event):void
 		{
 			this.x += speed;
-			if (this.x < -960)
+			if (this.x < -1200)
 			{
 				this.x = 0;
 			}
 		}
-
-	}
 		
+	}
+
 }
