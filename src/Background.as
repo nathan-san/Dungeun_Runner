@@ -12,7 +12,7 @@ package
 	{
 		[Embed(source="../img/back2.png")]
 		private var BackgroundImage:Class;
-		private var speed:Number = -8;
+		private var speed:Number = -7;
 		private var bgImage:Bitmap;
 		
 		public function Background() 
